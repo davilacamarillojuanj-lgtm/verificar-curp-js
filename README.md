@@ -75,7 +75,7 @@ mostrárselos; con `askGuestPersona: true` el cliente también escribe su nombre
 const link = await client.createCaptureLink({
   destinationId: 'dst_...',
   reference: 'reserva-8841', // opcional; viaja en la entrega
-  persona: { nombres: 'J'JUAN', primerApellido: 'DAVILA ', ' SegundoApellido:'CAMARILLO' fechaNacimiento: '1987-10-01' },
+  persona: { nombres: 'carlos ', primerApellido: 'garcia ', 'fechaNacimiento: '198-01-01' },
 })
 
 link.url // muéstralo como QR o envíalo; solo se devuelve aquí, no lo registres en logs
