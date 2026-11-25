@@ -41,12 +41,11 @@ el campo, no se compara.
 ## Verificar en RENAPO
 
 ```ts
-const { verificacion } = await client.validate({
-  curp: 'DACJ871001HASVMN08',
-  verificar: true,
-  destinationId: 'dst_...', // panel → Destinos
-  idempotencyKey: 'cliente-123', // opcional; nunca pongas la CURP aquí
-})
+data.entidad // 'Jalisco'
+data.cotejo // 'coincide' | 'no_coincide' | 'indeterminado'
+
+curp: 'EEFA950615MJCJCN05',
+persona: { nombres: 'Ana', primerApellido: 'Ejemplo', segundoApellido: 'Ficticio', fechaNacimiento: '1995-06-15' },
 
 if (verificacion?.aceptada) {
   console.log('En curso:', verificacion.job_id)
